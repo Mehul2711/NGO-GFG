@@ -1,0 +1,53 @@
+.btn1 {
+  background-color: rgb(27, 58, 235);
+  border: none;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+}
+.btn1:hover {
+  background-color: rgb(48, 241, 129);
+}
+.btn1 {
+  background-color: blue;
+  border: none;
+  padding: 10px;
+  color: aliceblue;
+}
+.btn1:hover {
+  background-color: rgb(219, 61, 211);
+}
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.images {
+  text-align: center;
+}
+
+.images img {
+  width: 100%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.top1 img {
+  width: 50px;
+  margin-top: 10px;
+}
+.contactus1 img {
+  width: 50px;
+  margin-top: 10px;
+}
+
+.about_image {
+  text-align: center;
+}
+.contact_img {
+  text-align: center;
+}
+.contact_icon img {
+  width: 55px;
+  margin-right: 10px;
+}
