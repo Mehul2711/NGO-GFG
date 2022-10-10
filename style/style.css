@@ -17,7 +17,7 @@
   background-color: rgb(219, 61, 211);
 }
 body {
-  background-color: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgb(255, 45, 213), rgb(40, 215, 200));
 }
 
 .images {
@@ -50,4 +50,310 @@ body {
 .contact_icon img {
   width: 55px;
   margin-right: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "segoe ui";
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #4d4d4d;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: flex;
+  float: right;
+  font-size: 15px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+.button-one {
+  background: #edf000; /* background color */
+}
+.button-two {
+  background: #f15640;
+}
+.button-three {
+  background: #27c9b8;
+}
+.button-one,
+.button-two,
+.button-three {
+  color: #1d1d1d; /* text color */
+  display: inline-block;
+  border-radius: 0; /* square corners */
+  padding: 10px 18px; /* space around text */
+  text-transform: uppercase; /* all capital letters */
+  font-weight: 700;
+  letter-spacing: 1px;
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.button-one:hover,
+.button-two:hover,
+.button-three:hover {
+  background: #fff;
+}
+
+.gallery {
+  size: 0ch;
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: aliceblue;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 5rem;
+  background: linear-gradient(180deg, #6fb4fd 0%, #5caafc 100%, 0);
+}
+
+.brand a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  list-style-type: none;
+  margin-left: 3rem;
+}
+
+li > a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+li::after {
+  content: "";
+  width: 0rem;
+  height: 0.15rem;
+  background-color: #fff;
+  display: block;
+  border-radius: 0.2rem;
+  margin: 0.2rem auto 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+
+li:hover::after {
+  width: 2rem;
+}
+.brand {
+  font-size: 10px;
+}
+
+.mainContent {
+  background-size: cover;
+  position: relative;
+}
+
+.mainContent h1 {
+  top: 25%;
+  left: 37%;
+  position: absolute;
+}
+
+header {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+.aboutContainer {
+  padding: 181px;
+  height: 100%;
+  width: 100%;
+}
+
+.aboutContent {
+  width: 100%;
+  height: 100%;
+}
+
+.main-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-block h1 {
+  margin-bottom: 10px;
+}
+form {
+  padding: 25px;
+  margin: 25px;
+  box-shadow: 0 2px 5px #f5f5f5;
+  background: #f5f5f5;
+}
+.fas {
+  margin: 25px 10px 0;
+  font-size: 72px;
+  color: #fff;
+}
+.fa-envelope {
+  transform: rotate(-20deg);
+}
+.fa-at,
+.fa-mail-bulk {
+  transform: rotate(10deg);
+}
+input,
+textarea {
+  width: calc(100% - 18px);
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #1c87c9;
+  outline: none;
+}
+input::placeholder {
+  color: #666;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #1c87c9;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+button:hover {
+  background: #2371a0;
+}
+@media (min-width: 568px) {
+  .main-block {
+    flex-direction: row;
+  }
+  .left-part,
+  form {
+    width: 50%;
+  }
+  .fa-envelope {
+    margin-top: 0;
+    margin-left: 20%;
+  }
+  .fa-at {
+    margin-top: -10%;
+    margin-left: 65%;
+  }
+  .fa-mail-bulk {
+    margin-top: 2%;
+    margin-left: 28%;
+  }
+}
+
+.icons {
+  margin-top: -60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.galleryHead {
+  color: #eee;
 }
